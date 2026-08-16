@@ -52,7 +52,7 @@ export default function Countdown({ minutes, storageKey }: Props) {
         {pad(hours)}:{pad(mins)}:{pad(secs)}
       </div>
       <div style={{ opacity: 0.75, letterSpacing: 5, marginTop: 6 }}>
-        HR&nbsp;&nbsp;&nbsp;MIN&nbsp;&nbsp;&nbsp;SEG
+        HR&nbsp;&nbsp;&nbsp;MIN&nbsp;&nbsp;&nbsp;SEC
       </div>
     </div>
   );
