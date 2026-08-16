@@ -30,7 +30,7 @@ export default function SocialMenu({ children, accounts }: { children: React.Rea
           >
             <div style={{ width: 36, height: 4, background: "rgba(255,255,255,0.3)", borderRadius: 999, margin: "0 auto 20px" }} />
             {accounts.map(a => (
-              
+              <a
                 key={a.url}
                 href={a.url}
                 target="_blank"
