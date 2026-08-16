@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Countdown from "./components/Countdown";
 import AgeGate from "./components/AgeGate";
+import SocialMenu from "./components/SocialMenu";
 
 const trackingLinks: Record<string, string> = {
   ig1:   "https://onlyfans.com/tashapaige/c33",
@@ -126,9 +127,9 @@ export default async function Page({
           <div style={{ position: "absolute", bottom: 14, left: 0, right: 0, display: "flex", gap: 10, justifyContent: "center" }}>
             <SocialBtn href={LINK_KICK}><IconKick /></SocialBtn>
             <SocialBtn href={LINK_TG}><IconTG /></SocialBtn>
-            <SocialBtn href={IG_ACCOUNTS[0].url}><IconIG /></SocialBtn>
-            <SocialBtn href={TT_ACCOUNTS[0].url}><IconTT /></SocialBtn>
-            <SocialBtn href={X_ACCOUNTS[0].url}><IconX /></SocialBtn>
+            <SocialMenu accounts={IG_ACCOUNTS}><IconIG /></SocialMenu>
+            <SocialMenu accounts={TT_ACCOUNTS}><IconTT /></SocialMenu>
+            <SocialMenu accounts={X_ACCOUNTS}><IconX /></SocialMenu>
           </div>
         </div>
 
