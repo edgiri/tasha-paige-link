@@ -3,14 +3,13 @@ import Countdown from "./components/Countdown";
 import AgeGate from "./components/AgeGate";
 
 const trackingLinks: Record<string, string> = {
-  va2049: "https://onlyfans.com/erinmiajames/c9",
-  va2048: "https://onlyfans.com/erinmiajames/c8",
-  va2045: "https://onlyfans.com/erinmiajames/c7",
-  va2037: "https://onlyfans.com/erinmiajames/c6",
-  va1525: "https://onlyfans.com/erinmiajames/c5",
-  p:      "https://onlyfans.com/erinmiajames/c10",
-  lu:     "https://onlyfans.com/erinmiajames/c4",
-  default: "https://onlyfans.com/erinmiajames",
+  ig1:   "https://onlyfans.com/tashapaige/c33",
+  ig2:   "https://onlyfans.com/tashapaige/c34",
+  ig3:   "https://onlyfans.com/tashapaige/c35",
+  ig4:   "https://onlyfans.com/tashapaige/c36",
+  main:  "https://onlyfans.com/tashapaige/c37",
+  tg:    "https://onlyfans.com/tashapaige/c38",
+  default: "https://onlyfans.com/tashapaige",
 };
 
 const IconIG = () => (
@@ -77,12 +76,12 @@ export default async function Page({
   const { ref } = await searchParams;
   const LINK_MAIN = trackingLinks[ref ?? ""] ?? trackingLinks["default"];
 
-  const NAME = "Erin Mia James";
-  const PROMO = "75% OFF · JUST TODAY";
-  const LINK_IG = "https://www.instagram.com/erinmiajamesagain/";
-  const LINK_TIKTOK = "https://www.tiktok.com/@itserinmiajames";
-  const LINK_TG = "https://t.me/+GjGJj2dorOEzNTE1";
-  const LINK_FB = "https://www.facebook.com/ErinMiaJames/";
+  const NAME = "Tasha Paige";
+  const PROMO = "70% OFF · JUST TODAY";
+  const LINK_IG = "https://www.instagram.com/tashaxpaige";
+  const LINK_TIKTOK = "https://www.tiktok.com/@anothertashapaige";
+  const LINK_TG = "https://t.me/+7XL16Nk1h1U3MmFl";
+  const LINK_FB = "https://x.com/realtashapaige";
 
   return (
     <>
@@ -124,7 +123,7 @@ export default async function Page({
       >
         {/* HERO IMAGE */}
         <div style={{ position: "relative", width: "100%", height: "clamp(320px, 70vw, 440px)" }}>
-          <Image src="/avatar.jpg" alt="Erin Mia James" fill priority style={{ objectFit: "cover", objectPosition: "top" }} />
+          <Image src="/avatar.jpg" alt="Tasha Paige" fill priority style={{ objectFit: "cover", objectPosition: "top" }} />
           {/* Gradiente pronunciado hacia negro */}
           <div style={{
             position: "absolute", bottom: 0, left: 0, right: 0, height: "65%",
@@ -179,7 +178,7 @@ export default async function Page({
 
           {/* COUNTDOWN pequeño */}
           <div style={{ transform: "scale(0.62)", transformOrigin: "center top", marginBottom: -8 }}>
-            <Countdown minutes={15} storageKey="erin-mia-james-endsAt" />
+            <Countdown minutes={15} storageKey="tasha-paige-endsAt" />
           </div>
 
           {/* CARD IMAGE */}

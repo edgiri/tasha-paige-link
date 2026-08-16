@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Erin Mia James",
+  title: "Tasha Paige",
   description: "Content creator and model.",
   referrer: "no-referrer",
 };
