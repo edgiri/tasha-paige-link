@@ -22,7 +22,7 @@ const BadgeVerified = () => (
 
 function SocialBtn({ href, children, onClick }: { href?: string; children: React.ReactNode; onClick?: () => void }) {
   const style: React.CSSProperties = {
-    width: 48, height: 48, borderRadius: "50%",
+    width: 44, height: 44, borderRadius: "50%",
     display: "grid", placeItems: "center",
     textDecoration: "none", cursor: "pointer",
     border: "none", padding: 0,
@@ -34,7 +34,7 @@ function SocialBtn({ href, children, onClick }: { href?: string; children: React
 
 // Logos en color SVG
 const IconTT = () => (
-  <div style={{ width: 48, height: 48, borderRadius: "50%", background: "#000", display: "grid", placeItems: "center" }}>
+  <div style={{ width: 44, height: 44, borderRadius: "50%", background: "#000", display: "grid", placeItems: "center" }}>
     <svg width="26" height="26" viewBox="0 0 24 24" fill="white">
       <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.32 6.32 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.75a4.85 4.85 0 01-1.01-.06z"/>
     </svg>
@@ -42,7 +42,7 @@ const IconTT = () => (
 );
 
 const IconTG = () => (
-  <div style={{ width: 48, height: 48, borderRadius: "50%", background: "linear-gradient(135deg, #2AABEE, #229ED9)", display: "grid", placeItems: "center" }}>
+  <div style={{ width: 44, height: 44, borderRadius: "50%", background: "linear-gradient(135deg, #2AABEE, #229ED9)", display: "grid", placeItems: "center" }}>
     <svg width="26" height="26" viewBox="0 0 24 24" fill="white">
       <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L8.32 14.617l-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.828.942z"/>
     </svg>
@@ -50,7 +50,7 @@ const IconTG = () => (
 );
 
 const IconIG = () => (
-  <div style={{ width: 48, height: 48, borderRadius: "50%", background: "linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888)", display: "grid", placeItems: "center" }}>
+  <div style={{ width: 44, height: 44, borderRadius: "50%", background: "linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888)", display: "grid", placeItems: "center" }}>
     <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
       <rect x="2" y="2" width="20" height="20" rx="6" stroke="white" strokeWidth="1.8"/>
       <circle cx="12" cy="12" r="5" stroke="white" strokeWidth="1.8"/>
@@ -60,7 +60,7 @@ const IconIG = () => (
 );
 
 const IconX = () => (
-  <div style={{ width: 48, height: 48, borderRadius: "50%", background: "#000", display: "grid", placeItems: "center" }}>
+  <div style={{ width: 44, height: 44, borderRadius: "50%", background: "#000", display: "grid", placeItems: "center" }}>
     <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
       <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L2.25 2.25h6.832l4.258 5.632L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z"/>
     </svg>
@@ -68,7 +68,7 @@ const IconX = () => (
 );
 
 const IconKick = () => (
-  <div style={{ width: 48, height: 48, borderRadius: "50%", background: "#53FC18", display: "grid", placeItems: "center" }}>
+  <div style={{ width: 44, height: 44, borderRadius: "50%", background: "#53FC18", display: "grid", placeItems: "center" }}>
     <svg width="28" height="28" viewBox="0 0 24 24" fill="black">
       <path d="M4 2h4v8l4-8h4l-5 10 5 10h-4l-4-8v8H4z"/>
     </svg>
