@@ -118,7 +118,7 @@ export default async function Page({
           <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: "65%", background: "linear-gradient(to bottom, transparent, #000)" }} />
 
           {/* Nombre */}
-          <div style={{ position: "absolute", bottom: 78, left: 0, right: 0, textAlign: "center", display: "flex", alignItems: "center", justifyContent: "center", gap: 8 }}>
+          <div style={{ position: "absolute", bottom: 58, left: 0, right: 0, textAlign: "center", display: "flex", alignItems: "center", justifyContent: "center", gap: 8 }}>
             <span style={{ fontSize: "clamp(18px, 4.5vw, 24px)", fontWeight: 800 }}>{NAME}</span>
             <BadgeVerified />
           </div>
