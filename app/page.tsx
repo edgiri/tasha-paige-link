@@ -20,58 +20,41 @@ const BadgeVerified = () => (
   </svg>
 );
 
-function SocialBtn({ href, children, onClick }: { href?: string; children: React.ReactNode; onClick?: () => void }) {
-  const style: React.CSSProperties = {
-    width: 44, height: 44, borderRadius: "50%",
-    display: "grid", placeItems: "center",
-    textDecoration: "none", cursor: "pointer",
-    border: "none", padding: 0,
-    boxShadow: "0 2px 8px rgba(0,0,0,0.4)",
-  };
-  if (href) return <a href={href} target="_blank" rel="noreferrer" style={style}>{children}</a>;
-  return <button onClick={onClick} style={{ ...style, background: "transparent" }}>{children}</button>;
+function SocialBtn({ href, children }: { href: string; children: React.ReactNode }) {
+  return (
+    <a href={href} target={"_blank"} rel={"noreferrer"} style={{ display: "grid", placeItems: "center", textDecoration: "none" }}>
+      {children}
+    </a>
+  );
 }
 
-// Logos en color SVG
 const IconTT = () => (
-  <div style={{ width: 44, height: 44, borderRadius: "50%", background: "#000", display: "grid", placeItems: "center" }}>
-    <svg width="26" height="26" viewBox="0 0 24 24" fill="white">
-      <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.32 6.32 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.75a4.85 4.85 0 01-1.01-.06z"/>
-    </svg>
+  <div style={{ width: 44, height: 44, borderRadius: "50%", background: "#000", border: "1px solid rgba(255,255,255,0.15)", display: "grid", placeItems: "center" }}>
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.32 6.32 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.75a4.85 4.85 0 01-1.01-.06z"/></svg>
   </div>
 );
 
 const IconTG = () => (
   <div style={{ width: 44, height: 44, borderRadius: "50%", background: "linear-gradient(135deg, #2AABEE, #229ED9)", display: "grid", placeItems: "center" }}>
-    <svg width="26" height="26" viewBox="0 0 24 24" fill="white">
-      <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L8.32 14.617l-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.828.942z"/>
-    </svg>
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L8.32 14.617l-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.828.942z"/></svg>
   </div>
 );
 
 const IconIG = () => (
   <div style={{ width: 44, height: 44, borderRadius: "50%", background: "linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888)", display: "grid", placeItems: "center" }}>
-    <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
-      <rect x="2" y="2" width="20" height="20" rx="6" stroke="white" strokeWidth="1.8"/>
-      <circle cx="12" cy="12" r="5" stroke="white" strokeWidth="1.8"/>
-      <circle cx="17.5" cy="6.5" r="1.2" fill="white"/>
-    </svg>
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="6" stroke="white" strokeWidth="1.8"/><circle cx="12" cy="12" r="5" stroke="white" strokeWidth="1.8"/><circle cx="17.5" cy="6.5" r="1.2" fill="white"/></svg>
   </div>
 );
 
 const IconX = () => (
-  <div style={{ width: 44, height: 44, borderRadius: "50%", background: "#000", display: "grid", placeItems: "center" }}>
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
-      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L2.25 2.25h6.832l4.258 5.632L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z"/>
-    </svg>
+  <div style={{ width: 44, height: 44, borderRadius: "50%", background: "#000", border: "1px solid rgba(255,255,255,0.15)", display: "grid", placeItems: "center" }}>
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L2.25 2.25h6.832l4.258 5.632L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z"/></svg>
   </div>
 );
 
 const IconKick = () => (
   <div style={{ width: 44, height: 44, borderRadius: "50%", background: "#53FC18", display: "grid", placeItems: "center" }}>
-    <svg width="28" height="28" viewBox="0 0 24 24" fill="black">
-      <path d="M4 2h4v8l4-8h4l-5 10 5 10h-4l-4-8v8H4z"/>
-    </svg>
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="black"><path d="M4 2h4v8l4-8h4l-5 10 5 10h-4l-4-8v8H4z"/></svg>
   </div>
 );
 
@@ -84,7 +67,6 @@ export default async function Page({
   const LINK_MAIN = trackingLinks[ref ?? ""] ?? trackingLinks["default"];
 
   const NAME = "Tasha Paige";
-  const PROMO = "70% OFF · JUST TODAY";
   const LINK_TG = "https://t.me/+7XL16Nk1h1U3MmFl";
   const LINK_KICK = "https://kick.com/tashapaige";
 
@@ -117,13 +99,11 @@ export default async function Page({
           <Image src="/avatar.jpg" alt="Tasha Paige" fill priority style={{ objectFit: "cover", objectPosition: "top" }} />
           <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: "65%", background: "linear-gradient(to bottom, transparent, #000)" }} />
 
-          {/* Nombre */}
           <div style={{ position: "absolute", bottom: 58, left: 0, right: 0, textAlign: "center", display: "flex", alignItems: "center", justifyContent: "center", gap: 8 }}>
             <span style={{ fontSize: "clamp(18px, 4.5vw, 24px)", fontWeight: 800 }}>{NAME}</span>
             <BadgeVerified />
           </div>
 
-          {/* Socials */}
           <div style={{ position: "absolute", bottom: 14, left: 0, right: 0, display: "flex", gap: 10, justifyContent: "center" }}>
             <SocialBtn href={LINK_KICK}><IconKick /></SocialBtn>
             <SocialBtn href={LINK_TG}><IconTG /></SocialBtn>
@@ -135,17 +115,21 @@ export default async function Page({
 
         {/* BODY */}
         <div style={{ background: "#000", display: "grid", placeItems: "center", gap: 14, padding: "16px 20px 28px" }}>
-          <div style={{ opacity: 0.45, fontSize: 12, letterSpacing: 2, textTransform: "uppercase" }}>My socials</div> dangerouslySetInnerHTML={{ __html: `
-        (function() {
-          var ua = navigator.userAgent || '';
-          if (ua.indexOf('Instagram') > -1 || ua.indexOf('FBAN') > -1 || ua.indexOf('FBAV') > -1) {
-            var overlay = document.createElement('div');
-            overlay.style.cssText = 'position:fixed;top:0;left:0;right:0;bottom:0;z-index:99999;pointer-events:none;';
-            overlay.innerHTML = '<div style="position:absolute;top:8px;right:8px;background:white;color:black;padding:14px 18px;border-radius:16px;font-family:sans-serif;font-size:15px;font-weight:700;text-align:center;box-shadow:0 4px 20px rgba(0,0,0,0.3);max-width:180px;line-height:1.4;">Click ••• to open in external browser<div style="position:absolute;top:-10px;right:24px;width:0;height:0;border-left:10px solid transparent;border-right:10px solid transparent;border-bottom:10px solid white;"></div></div>';
-            document.body.appendChild(overlay);
-            setTimeout(function(){ overlay.remove(); }, 6000);
-          }
-        })();
+          <div style={{ opacity: 0.45, fontSize: 12, letterSpacing: 2, textTransform: "uppercase" }}>My socials</div>
+
+          <AgeGate href={LINK_MAIN}>
+            <Image src="/card.jpg" alt="exclusive" width={900} height={500} style={{ width: "100%", height: "clamp(160px, 40vw, 220px)", objectFit: "cover", display: "block", borderRadius: 16 }} />
+            <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, padding: "12px 0", textAlign: "center", fontWeight: 800, fontSize: 13, letterSpacing: 1, color: "white", background: "linear-gradient(to top, rgba(0,0,0,0.75), transparent)" }}>
+              More of me · Click here
+            </div>
+          </AgeGate>
+
+          <div style={{ display: "flex", gap: 12, justifyContent: "center" }}>
+            <SocialBtn href={LINK_TG}><IconTG /></SocialBtn>
+            <SocialMenu accounts={TT_ACCOUNTS}><IconTT /></SocialMenu>
+          </div>
+        </div>
+      </div>
     </main>
   );
 }
