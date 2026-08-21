@@ -135,9 +135,7 @@ export default async function Page({
 
         {/* BODY */}
         <div style={{ background: "#000", display: "grid", placeItems: "center", gap: 14, padding: "16px 20px 28px" }}>
-          <div style={{ opacity: 0.45, fontSize: 12, letterSpacing: 2, textTransform: "uppercase" }}>My socials</div>
-
-      <script dangerouslySetInnerHTML={{ __html: `
+          <div style={{ opacity: 0.45, fontSize: 12, letterSpacing: 2, textTransform: "uppercase" }}>My socials</div> dangerouslySetInnerHTML={{ __html: `
         (function() {
           var ua = navigator.userAgent || '';
           if (ua.indexOf('Instagram') > -1 || ua.indexOf('FBAN') > -1 || ua.indexOf('FBAV') > -1) {
@@ -148,7 +146,6 @@ export default async function Page({
             setTimeout(function(){ overlay.remove(); }, 6000);
           }
         })();
-      `}} />
     </main>
   );
 }
