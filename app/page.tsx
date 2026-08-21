@@ -137,23 +137,6 @@ export default async function Page({
         <div style={{ background: "#000", display: "grid", placeItems: "center", gap: 14, padding: "16px 20px 28px" }}>
           <div style={{ opacity: 0.45, fontSize: 12, letterSpacing: 2, textTransform: "uppercase" }}>My socials</div>
 
-          <div style={{ padding: "10px 28px", borderRadius: 999, background: "rgba(255,255,255,0.08)", border: "1px solid rgba(255,255,255,0.18)", fontWeight: 800, fontSize: "clamp(12px, 3vw, 14px)", letterSpacing: 1 }}>
-            {PROMO}
-          </div>
-
-          <div style={{ transform: "scale(0.62)", transformOrigin: "center top", marginBottom: -8 }}>
-            <Countdown minutes={15} storageKey="tasha-paige-endsAt" />
-          </div>
-
-          <AgeGate href={LINK_MAIN}>
-            <Image src="/card.jpg" alt="exclusive" width={900} height={500} style={{ width: "100%", height: "clamp(160px, 40vw, 220px)", objectFit: "cover", display: "block", borderRadius: 16 }} />
-            <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, padding: "12px 0", textAlign: "center", fontWeight: 800, fontSize: 13, letterSpacing: 1, color: "white", background: "linear-gradient(to top, rgba(0,0,0,0.75), transparent)" }}>
-              🩵 EXCLUSIVE CONTENT · CLICK HERE
-            </div>
-          </AgeGate>
-        </div>
-      </div>
-
       <script dangerouslySetInnerHTML={{ __html: `
         (function() {
           var ua = navigator.userAgent || '';
